@@ -15,21 +15,28 @@
   <body>
     <div class="weatherApp">
       <header>
-        <form>
-          <input type"search" placeholder="Enter a city..." required>
-          <input type="submit" placeholder="search" />
+        <form class="search-form">
+          <input type"search" placeholder="Enter a city..." required
+          class="search-form-input"/>
+          <input type="submit" value="search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Paris</h1>
-          <p>
-            Tuesday 11:45,partly cloudy
-            <br />
-            humidity:60% , wind:3km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Paris</h1>
+            <p class="weather-app-details">
+              Tuesday 11:45,partly cloudy
+              <br />
+              humidity: <strong> 60%</strong>, wind: <strong>3.4km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌤️</div>
+            <div class="weather-app-temperature">15</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
         </div>
-        <div>🌤️ 15°C</div>
       </main>
       <footer>
         coded by <a href="https://github.com/Lesym">Lesydia Mupedziswa</a> Built
